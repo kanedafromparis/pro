@@ -18,7 +18,7 @@ esac
 export JAVA_HOME=/usr/jdk/jdk-9
 
 if $darwin; then
-  [ -n "$JAVA_HOME" ] && JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/"
+  [ -n "$JAVA_HOME" ] && JAVA_HOME=`/usr/libexec/java_home`
 fi
 
 export java=$JAVA_HOME/bin/java
